@@ -1,0 +1,26 @@
+test = [199,
+200,
+208,
+210,
+200,
+207,
+240,
+269,
+260,
+263
+    ]
+    
+nDecrease = 0
+nIncrease = 0
+
+for index, number in enumerate(test):
+    if index == 0:
+        print('0')
+    else:
+        if test[index] > test[index-1]:
+            nIncrease = nIncrease + 1
+        else:
+            nDecrease = nDecrease + 1
+        
+        
+print(nIncrease)
